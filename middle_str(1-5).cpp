@@ -24,7 +24,7 @@ unsigned char itc_changeCase(unsigned char c){
     if (c >= 'a' && c <= 'z'){
         return c - 32;
     }
-    else if (c >= 'A' && c <= 'Z'){
+        else if (c >= 'A' && c <= 'Z'){
         return c + 32;
     }
     else{
@@ -33,9 +33,10 @@ unsigned char itc_changeCase(unsigned char c){
 }
 
 bool itc_compare(string s1, string s2){
-
+    if (itc_len(s1) != itc_len(s2))
+        return false;
+    else if ()
 }
-
 /*bool slo(string sl){
     for(int i = 0; i < itc_len(sl); i++)
     if (!(sl[i] >= 'n' && sl[i] <= 'z'))
@@ -57,3 +58,12 @@ int str_slovo(string s){
         }
     }
 }*/
+
+
+int itc_len(string st){
+    int i;
+    for(i = 0; st[i] != '\0'; i++);
+        return i;
+}
+
+
