@@ -1,8 +1,19 @@
 #include <iostream>
 #include <string>
-#include "middle_str.h"
 
 using namespace std;
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+int itc_len(string st){
+    int i;
+    for(i = 0; st[i] != '\0'; i++);
+        return i;
+}
 
 bool itc_isDigit(unsigned char c){
 if (c >= '0' && c <= '9')
@@ -35,7 +46,11 @@ unsigned char itc_changeCase(unsigned char c){
 bool itc_compare(string s1, string s2){
     if (itc_len(s1) != itc_len(s2))
         return false;
-    else if ()
+    for(int i = 0; s1[i] != '\0'; i++){
+        if (s1[i] != s2[i])
+            return false;
+    }
+    return true;
 }
 /*bool slo(string sl){
     for(int i = 0; i < itc_len(sl); i++)
@@ -58,12 +73,4 @@ int str_slovo(string s){
         }
     }
 }*/
-
-
-int itc_len(string st){
-    int i;
-    for(i = 0; st[i] != '\0'; i++);
-        return i;
-}
-
 
