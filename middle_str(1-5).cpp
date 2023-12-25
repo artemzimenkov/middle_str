@@ -3,11 +3,6 @@
 
 using namespace std;
 
-#include <iostream>
-#include <string>
-
-using namespace std;
-
 
 int itc_len(string st){
     int i;
