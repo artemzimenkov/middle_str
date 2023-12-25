@@ -47,25 +47,27 @@ bool itc_compare(string s1, string s2){
     }
     return true;
 }
-/*bool slo(string sl){
+
+bool slo(string sl){
     for(int i = 0; i < itc_len(sl); i++)
-    if (!(sl[i] >= 'n' && sl[i] <= 'z'))
+    if (!(sl[i] >= 'a' && sl[i] <= 'z'))
         return false;
     return true;
 }
 
-int str_slovo(string s){
-    s = ' ' + s + ' ';
+int itc_countWords(string str){
+    str = ' ' + str + ' ';
     int pr1 = 0, pr2;
-    for(int i = 0; i < itc_len(s); i++){
-        if (s[i] == ' '){
+    for(int i = 0; i < itc_len(str); i++){
+        if (str[i] == ' '){
             pr2 = i;
             string sl;
-            sl = pol(s, pr1, pr2);
+            sl = pol(str, pr1, pr2);
             if (slo(sl))
                 kol++;
             pr1 = pr2;
         }
     }
-}*/
+}
+
 
